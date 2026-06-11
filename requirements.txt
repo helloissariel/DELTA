@@ -1,0 +1,14 @@
+# Environment used for the reported results (conda env "startcn"):
+#   Python 3.8.20, CUDA 12.1
+torch==2.4.1
+numpy==1.22.4
+pandas==1.3.5
+scikit-learn==1.0.2
+scipy==1.7.3
+matplotlib==3.5.3
+# torch was installed as the CUDA 12.1 build (2.4.1+cu121). For GPU support install
+# the matching wheel:  pip install torch==2.4.1 --index-url https://download.pytorch.org/whl/cu121
+#
+# Evaluation also requires an `affiliation_metrics.py` exposing
+# `affiliation_metrics_from_binary_vectors` (Huet et al., KDD 2022):
+#   https://github.com/ahstat/affiliation-metrics-py
